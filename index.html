@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<title>D20 Pin</title>
+
+<style type="text/css">
+body { 
+		background-color:#2980b9; 
+		font-family: Dense Regular;
+		color: #FFFFFF;
+		text-align: center;
+		src: local(Dense-Regular);
+		}
+h1 { font-size:5vw; }
+h2 { font-size:1vw; }
+a img { border:none; }
+</style>
+<script type="text/javascript">
+
+var random_images_array = ['20.png', 'frown.gif', 'grim.gif', 'bomb.gif'];
+    
+function getRandomImage(imgAr, path) {
+    path = path || 'images/'; // default path here
+    var num = Math.floor( Math.random() * imgAr.length );
+    var img = imgAr[ num ];
+    var imgStr = '<img src="' + path + img + '" alt = "">';
+    document.write(imgStr); document.close();
+}
+
+</script>
+</head>
+<body>
+    
+<h1>You Just Rolled</h1>
+
+<div>
+    <script type="text/javascript">getRandomImage(random_images_array, 'images/')</script>
+</div>
+<h2>by Zamkamec</h2>
+
+
+</body>
+</html>
